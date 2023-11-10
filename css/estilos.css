@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(to right, rgb(24, 24, 28), rgb(49, 55, 56));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+   
+    height: 180px;
+    background-color: rgb(19, 19, 21);
+    width: 100vw;
+    text-align: center;
+    overflow-y: hidden;
+
+}
+
+header img{
+    padding: 0.5%;
+}
+
+
+.pokeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.pokemon {
+    background-color: rgb(214, 214, 214);
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.imagemContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.imagemContainer img {
+    max-width: 90%;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.number {
+    background-color: rgba(0,0,0,0.2);
+    padding: 2.5px 13px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.name {
+    margin: 15px;
+    letter-spacing: 1.5px;
+}
+
+.pesquisa {
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    padding: 8px;
+    
+    width: 25vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: rgb(188, 188, 188);
+   
+    
+}
+
+input {
+    border-radius: 10px;
+    height: 25px;
+    width: 200px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: black;
+    color: rgb(191, 191, 191);
+    border: 1px solid rgb(0, 0, 0);
+  }
+
+.rodape {
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 10vh;
+}
+
+
+.botaoFixo {
+    position: fixed;
+    bottom: 20px; /* Ajuste a posição conforme necessário */
+    right: 20px; /* Ajuste a posição conforme necessário */
+    z-index: 999; /* Para garantir que fique acima de outros elementos */
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    border: solid 1px rgb(255, 0, 0);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botaoFixo:hover {
+    background-color: #e60000; /* Vermelho mais escuro no hover */
+  }
+
+ 
